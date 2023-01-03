@@ -23,7 +23,7 @@ int getAdjacentLivesCount(int _x, int _y) {
 	int count = 0;
 
 	//原点のセルの相対座標を調べる
-	for (int y = -1; y <= 1; y++)
+	for (int y = -1; y <= 1; y++)//二重ループは{}が要らない
 		for (int x = -1; x <= 1; x++) {
 			//原点自身をスルーする
 			if ((x == 0) && (y == 0))
@@ -82,7 +82,7 @@ int main() {
 			break;
 		case '\r'://エンターを押すとすべてのセルをチャックする
 			//上下に反復する
-			for (int y = 0; y < FIELD_HEIGHT; y++) 
+			for (int y = 0; y < FIELD_HEIGHT; y++) //二重ループは{}が要らない
 				//左右に反復する
 				for (int x = 0; x < FIELD_WIDTH; x++) {
 					//すべての生きているセルを数える
