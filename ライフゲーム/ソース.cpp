@@ -28,7 +28,6 @@ int getAdjacentLivesCount(int _x, int _y) {
 			//原点自身をスルーする
 			if ((x == 0) && (y == 0))
 				continue;
-
 			//それぞれの相対座標のxを定義する
 			int x2 = (FIELD_WIDTH + _x + x) % FIELD_WIDTH;//原点のxと相対座標のxを足す。範囲外は足さない
 			//それぞれの相対座標のyを定義する
